@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Facebook",
+		"matchUrls": ["facebook.com", "facebook.net"],
+		"category": "Social",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Chartbeat",
+		"matchUrls": ["chartbeat.com"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Twitter",
+		"matchUrls": ["twitter.com", "t.co"],
+		"category": "Social",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Spotify",
+		"matchUrls": ["spotify.com", "spotify-playlist-widget.s3.amazonaws.com"],
+		"category": "Widget",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Crazyegg",
+		"matchUrls": ["crazyegg.com"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "CIM",
+		"matchUrls": ["hit.gemius.pl"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Google DFP",
+		"matchUrls": ["doubleclick.net", "googlesyndication.com", "googleadservices.com"],
+		"category": "Advertising",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Google GTM",
+		"matchUrls": ["googletagservices.com", "googletagmanager.com"],
+		"category": "Tagmanager",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Lynx",
+		"matchUrls": ["lynx.be"],
+		"category": "Advertising",
+		"entries": [],
+		"totals": {}
+	}
+]
