@@ -1,4 +1,5 @@
-var fs = require('fs');
+var fs = require('fs'),
+    url = require('url');
 
 module.exports = {
     run: function(harJSON, firstPartyUrls) {
@@ -112,9 +113,10 @@ function matchWithProvider(entry) {
                     hasMatch = true;
 
                     // add this new url as a thirdparty
-                    console.log('The referer is a know thirdparty: ' +  provider.name);
-                    console.log('new url to add: '+ entry.request.url);
-                    provider.matchUrls.push(entry.request.url); 
+                    // console.log('The referer is a know thirdparty: ' +  provider.name);
+                    // console.log('new url to add: '+ entry.request.url);
+
+                    provider.matchUrls.push(url.parse(entry.request.url).hostname); 
                 }
             }
         }
@@ -133,12 +135,16 @@ function addToProvider(provider, entry) {
     provider.entries.push(entry);
 }
 
-function hasMatchingUrl(matchUrls, url) {
-    var hasMatch = false;
+function hasMatchingUrl(matchUrls, entryUrl) {
+    var hasMatch = false,
+        entryUrlHostname = url.parse(entryUrl).hostname;
+
+    console.log('full url: ' + entryUrl);
+    console.log('domain: ' + url.parse(entryUrl).hostname);
 
     matchUrls.forEach(function(providerUrl) {
         var re = new RegExp(providerUrl, "g");
-        var result = url.match(re);
+        var result = entryUrlHostname.match(re);
 
         if (result) {
             hasMatch = true;

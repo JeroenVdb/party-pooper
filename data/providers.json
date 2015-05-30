@@ -8,7 +8,7 @@
 	},
 	{
 		"name": "Chartbeat",
-		"matchUrls": ["chartbeat.com"],
+		"matchUrls": ["chartbeat.com", "chartbeat.net"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
@@ -56,8 +56,29 @@
 		"totals": {}
 	},
 	{
+		"name": "Google Universal Analytics",
+		"matchUrls": ["google-analytics.com"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
+	},
+	{
 		"name": "Lynx",
 		"matchUrls": ["lynx.be"],
+		"category": "Advertising",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "De Persgroep UTS",
+		"matchUrls": ["utsdpp.persgroep.net"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "De Persgroep Advertising",
+		"matchUrls": ["persgroepadvertising.be"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
