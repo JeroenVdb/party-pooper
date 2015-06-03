@@ -18,5 +18,8 @@
     "email": "vandenberghe.jeroen@gmail.com",
     "url": "jeroenvdb.be"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prettysize": "0.0.3"
+  }
 }

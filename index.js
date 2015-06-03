@@ -1,5 +1,6 @@
 var fs = require('fs'),
-    url = require('url');
+    url = require('url'),
+    pretty = require('prettysize');
 
 module.exports = {
     run: function(harJSON, firstPartyUrls) {
@@ -88,6 +89,8 @@ function calculateTotals(provider) {
         provider.totals.timings = provider.totals.timings + parseInt(entry.time, 10);
         provider.totals.content.size = provider.totals.content.size + parseInt(entry.response.content.size, 10);
     });
+
+    provider.totals.content.size = pretty(provider.totals.content.size);
 
     provider.totals.requests = provider.entries.length;
 
