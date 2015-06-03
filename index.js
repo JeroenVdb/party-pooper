@@ -6,6 +6,21 @@ module.exports = {
 
         var entries = [];
 
+        thirdPartyProviders = [];
+        firstPartyProviders = [];
+
+        unknownProvider = [{
+            "name": "Unknown Providers",
+            "entries": [],
+            "totals": {}
+        }]
+
+        firstPartyProvider = [{
+            "name": "First Party providers",
+            "entries": [],
+            "totals": {}
+        }];
+
         entries = getEntries(harJSON);
         thirdPartyProviders = getThirdPartyProviders();
 
@@ -73,7 +88,7 @@ function calculateTotals(provider) {
         provider.totals.timings = provider.totals.timings + parseInt(entry.time, 10);
         provider.totals.content.size = provider.totals.content.size + parseInt(entry.response.content.size, 10);
     });
-    
+
     provider.totals.requests = provider.entries.length;
 
 }
@@ -116,7 +131,7 @@ function matchWithProvider(entry) {
                     // console.log('The referer is a know thirdparty: ' +  provider.name);
                     // console.log('new url to add: '+ entry.request.url);
 
-                    provider.matchUrls.push(url.parse(entry.request.url).hostname); 
+                    provider.matchUrls.push(url.parse(entry.request.url).hostname);
                 }
             }
         }
