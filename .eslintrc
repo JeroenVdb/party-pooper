@@ -6,7 +6,8 @@
 		"document": false,
 		"debounce": false,
 		"require": false,
-		"console": false
+		"console": false,
+		"__dirname": false
 	},
 	"rules": {
 		"comma-dangle": 2,
