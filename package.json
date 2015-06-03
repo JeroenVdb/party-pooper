@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Get third party information from HTTP Archive",
   "main": "index.js",
+  "repository": "JeroenVdb/party-pooper",
   "scripts": {
     "test": "node test.js"
   },
   "keywords": [
     "performance"
   ],
+  "engines": {
+    "node": "0.10.33"
+  },
   "author": {
     "name": "Jeroen Van den Berghe",
     "email": "vandenberghe.jeroen@gmail.com",
