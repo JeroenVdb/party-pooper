@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Facebook",
-		"matchUrls": ["facebook.com", "facebook.net"],
+		"matchUrls": ["facebook.com", "facebook.net", "fbstatic-a.akamaihd.net"],
 		"category": "Social",
 		"entries": [],
 		"totals": {}
@@ -77,10 +77,32 @@
 		"totals": {}
 	},
 	{
+		"name": "De Persgroep SSO",
+		"matchUrls": ["caps.hln.be"],
+		"category": "SSO",
+		"entries": [],
+		"totals": {}
+	},
+	{
 		"name": "De Persgroep Advertising",
 		"matchUrls": ["persgroepadvertising.be"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
+	},
+	{
+		"name": "Immoweb",
+		"matchUrls": ["static.immoweb.be", "pictures.immoweb.be"],
+		"category": "Advertising",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "Adhese",
+		"matchUrls": ["adhese.com"],
+		"category": "Advertising",
+		"entries": [],
+		"totals": {}
 	}
+
 ]
