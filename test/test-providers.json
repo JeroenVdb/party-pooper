@@ -1,0 +1,16 @@
+[
+	{
+		"name": "JeroenVdb",
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)jeroenvdb.be"],
+		"category": "Portfolio",
+		"entries": [],
+		"totals": {}
+	},
+	{
+		"name": "jhdefaar.be",
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)jhdefaar.be"],
+		"category": "JH De Faar",
+		"entries": [],
+		"totals": {}
+	}
+]

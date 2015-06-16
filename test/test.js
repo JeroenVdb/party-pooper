@@ -1,13 +1,16 @@
-var expect = require("chai").expect;
-var partypooper = require("../index.js");
-var fs = require('fs');
+'use strict';
 
-describe("Party Pooper", function(){
-	it("Party Pooper should output JSON formatted information", function(){
-		var result = partypooper.run(JSON.parse(fs.readFileSync(__dirname + '/www.demorgen.be.har', 'utf8')), ['demorgen-cdn.be', 'demorgen.be']);
-		
-		expect(result).to.have.a.property('firstParty');
-		expect(result).to.have.a.property('thirdParty');
-		expect(result).to.have.a.property('unknownParty');
+var expect = require('chai').expect,
+	partypooper = require('../index.js');
+
+describe('Party Pooper', function(){
+	it('Party Pooper should return false when the url isn\'t found', function() {
+		var result = partypooper.run('http://www.hln.be', '/test/test-providers.json');
+		expect(result).to.be.equal(false);
+	});
+
+	it('Party Pooper should return a provider object when the url is found', function() {
+		var result = partypooper.run('http://www.jeroenvdb.be', '/test/test-providers.json');
+		expect(result).to.be.an('object');
 	});
 });

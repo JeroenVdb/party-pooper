@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "JeroenVdb/party-pooper",
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha test/test.js"
   },
   "keywords": [
     "performance"
