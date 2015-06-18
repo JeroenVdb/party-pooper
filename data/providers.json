@@ -1,105 +1,120 @@
 [
 	{
+		"id": "facebook",
 		"name": "Facebook",
-		"matchUrls": ["facebook.com", "facebook.net", "fbstatic-a.akamaihd.net"],
+		"matchUrls": ["^(https|http|):\/\/(.+)\\.facebook\\.(com|net)", "^(https|http|)(:\/\/|)(www.|)fbstatic-a.akamaihd.net"],
 		"category": "Social",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "chartbeat",
 		"name": "Chartbeat",
-		"matchUrls": ["chartbeat.com", "chartbeat.net"],
+		"matchUrls": ["^(https|http|):\/\/(.+)\\.chartbeat.(com|net)"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "twitter",
 		"name": "Twitter",
-		"matchUrls": ["twitter.com", "t.co"],
+		"matchUrls": ["^(https|http|):\/\/[\\w]+\\.twitter.com", "^(https|http|):\/\/+t.co"],
 		"category": "Social",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "spotify",
 		"name": "Spotify",
-		"matchUrls": ["spotify.com", "spotify-playlist-widget.s3.amazonaws.com"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(embed.)spotify.com", "^(https|http|)(:\/\/|)(www.|)spotify-playlist-widget.s3.amazonaws.com"],
 		"category": "Widget",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "crazyegg",
 		"name": "Crazyegg",
-		"matchUrls": ["crazyegg.com"],
+		"matchUrls": ["^(https|http|):\/\/[\\w]+\\.crazyegg.com"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "cim",
 		"name": "CIM",
-		"matchUrls": ["hit.gemius.pl"],
+		"matchUrls": ["^(http|https):\/\/(.+)\\.gemius\\.pl"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "google-dfp",
 		"name": "Google DFP",
-		"matchUrls": ["doubleclick.net", "googlesyndication.com", "googleadservices.com"],
+		"matchUrls": ["^(https|http|):\/\/.+\\.doubleclick.net", "^(http|https):\/\/[\\w]+\\.googlesyndication\\.com", "^(http|https):\/\/[\\w]+\\.googleadservices\\.com"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "google-gtm",
 		"name": "Google GTM",
-		"matchUrls": ["googletagservices.com", "googletagmanager.com"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)googletagservices.com", "^(https|http|)(:\/\/|)(www.|)googletagmanager.com"],
 		"category": "Tagmanager",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "google-ua",
 		"name": "Google Universal Analytics",
-		"matchUrls": ["google-analytics.com"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)google-analytics.com"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "lynx",
 		"name": "Lynx",
-		"matchUrls": ["lynx.be"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)lynx.be"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "dpp-uts",
 		"name": "De Persgroep UTS",
-		"matchUrls": ["utsdpp.persgroep.net"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)utsdpp.persgroep.net"],
 		"category": "Analytics",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "dpp-sso",
 		"name": "De Persgroep SSO",
-		"matchUrls": ["caps.hln.be"],
+		"matchUrls": ["^https:\/\/caps.demorgen.be"],
 		"category": "SSO",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "dpp-adv",
 		"name": "De Persgroep Advertising",
-		"matchUrls": ["persgroepadvertising.be"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)persgroepadvertising.be"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "immoweb",
 		"name": "Immoweb",
-		"matchUrls": ["static.immoweb.be", "pictures.immoweb.be"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)static.immoweb.be", "^(https|http|)(:\/\/|)(www.|)pictures.immoweb.be"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
 	},
 	{
+		"id": "adhese",
 		"name": "Adhese",
-		"matchUrls": ["adhese.com"],
+		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)adhese.com"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
