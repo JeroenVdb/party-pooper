@@ -6,15 +6,37 @@ var fs = require('fs'),
 module.exports = {
 	'run': function(entryUrl, providerFilePath) {
 		var hasMatch = false,
-			thirdPartyProviders = getThirdPartyProviders(providerFilePath);
+			thirdPartyProviders = getThirdPartyProviders(providerFilePath),
+			returnProvider = {
+				'id': '',
+				'name': '',
+				'matchUrls': [],
+				'category': 'Unknown',
+				'entries': [],
+				'totals': {}
+			},
+			urlObject;
 
 		thirdPartyProviders.forEach(function(provider) {
 			if (hasMatchingUrl(provider.matchUrls, entryUrl)) {
-				hasMatch = provider;
+				console.log('We did find a match! Good!');
+				returnProvider = provider;
+				hasMatch = true;
 			}
 		});
 
-		return hasMatch;
+		// make a new provider from the entryUrl(host)
+		if (hasMatch === false) {
+			urlObject = url.parse(entryUrl);
+
+			console.log('We didn\'t find a match, lets make this request a new provider: ' + entryUrl);
+
+			returnProvider.id = urlObject.host;
+			returnProvider.name = urlObject.host;
+			returnProvider.matchUrls.push(urlObject.host);
+		}
+
+		return returnProvider;
 	}
 };
 
