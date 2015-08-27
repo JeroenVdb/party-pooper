@@ -57,7 +57,7 @@
 	},
 	{
 		"id": "google-gtm",
-		"name": "Google GTM",
+		"name": "Google Tagmanager",
 		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)googletagservices.com", "^(https|http|)(:\/\/|)(www.|)googletagmanager.com"],
 		"category": "Tagmanager",
 		"entries": [],
