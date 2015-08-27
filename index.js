@@ -29,8 +29,6 @@ module.exports = {
 		if (hasMatch === false) {
 			urlObject = url.parse(entryUrl);
 
-			console.log('We didn\'t find a match, lets make this request a new provider: ' + entryUrl);
-
 			returnProvider.id = urlObject.host;
 			returnProvider.name = urlObject.host;
 			returnProvider.matchUrls.push(urlObject.host);

@@ -2,7 +2,7 @@
 	{
 		"id": "facebook",
 		"name": "Facebook",
-		"matchUrls": ["^(https|http|):\/\/(.+)\\.facebook\\.(com|net)", "^(https|http|)(:\/\/|)(www.|)fbstatic-a.akamaihd.net"],
+		"matchUrls": ["^(https|http|):\/\/(.+)\\.facebook\\.(com|net)", "^(https|http|)(:\/\/|)(www.|)fbstatic-a.akamaihd.net", "^(https|http|)(:\/\/|)(www.|)fbexternal-a.akamaihd.net"],
 		"category": "Social",
 		"entries": [],
 		"totals": {}
@@ -114,7 +114,7 @@
 	{
 		"id": "adhese",
 		"name": "Adhese",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)adhese.com"],
+		"matchUrls": ["adhese.com"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
