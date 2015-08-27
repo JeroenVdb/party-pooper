@@ -4,9 +4,9 @@ var fs = require('fs'),
 	url = require('url');
 
 module.exports = {
-	'run': function(entryUrl, providerFilePath) {
+	'run': function(entryUrl) {
 		var hasMatch = false,
-			thirdPartyProviders = getThirdPartyProviders(providerFilePath),
+			thirdPartyProviders = getThirdPartyProviders(),
 			returnProvider = {
 				'id': '',
 				'name': '',
@@ -40,12 +40,8 @@ module.exports = {
 	}
 };
 
-function getThirdPartyProviders(providerFilePath) {
-	if (typeof providerFilePath === 'undefined') {
-		return JSON.parse(fs.readFileSync(__dirname + '/data/providers.json', 'utf8'));
-	} else {
-		return JSON.parse(fs.readFileSync(__dirname + providerFilePath, 'utf8'));
-	}
+function getThirdPartyProviders() {
+	return JSON.parse(fs.readFileSync(__dirname + '/data/providers.json', 'utf8'));
 }
 
 function hasMatchingUrl(matchUrls, entryUrl) {
