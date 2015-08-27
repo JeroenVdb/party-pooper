@@ -50,7 +50,7 @@
 	{
 		"id": "google-dfp",
 		"name": "Google DFP",
-		"matchUrls": ["^(https|http|):\/\/.+\\.doubleclick.net", "^(http|https):\/\/[\\w]+\\.googlesyndication\\.com", "^(http|https):\/\/[\\w]+\\.googleadservices\\.com"],
+		"matchUrls": ["^(https|http|):\/\/.+\\.doubleclick.net", "^(http|https):\/\/[\\w]+\\.googlesyndication\\.com", "^(http|https):\/\/[\\w]+\\.googleadservices\\.com", "^https:\/\/www.google.(\\w+)\/ads\/user-lists"],
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
