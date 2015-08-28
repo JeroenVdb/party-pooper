@@ -118,6 +118,14 @@
 		"category": "Advertising",
 		"entries": [],
 		"totals": {}
+	},
+	{
+		"id": "krux",
+		"name": "Krux",
+		"matchUrls": ["krxd.net"],
+		"category": "Analytics",
+		"entries": [],
+		"totals": {}
 	}
 
 ]
