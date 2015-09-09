@@ -1,7 +1,8 @@
 'use strict';
 
 var fs = require('fs'),
-	url = require('url');
+	url = require('url'),
+	calmcard = require('calmcard');
 
 module.exports = {
 	'run': function(entryUrl) {
@@ -42,11 +43,8 @@ function getThirdPartyProviders() {
 function hasMatchingUrl(matchUrls, entryUrl) {
 	var hasMatch = false;
 
-	matchUrls.forEach(function(urlRegex) {
-		var re = new RegExp(urlRegex, 'g'),
-			result = entryUrl.match(re);
-
-		if (result) {
+	matchUrls.forEach(function(matchUrl) {
+		if (calmcard(matchUrl, entryUrl)) {
 			hasMatch = true;
 		}
 	});

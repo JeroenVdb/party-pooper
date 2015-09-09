@@ -20,6 +20,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "calmcard": "^0.1.1",
     "prettysize": "0.0.3"
   }
 }

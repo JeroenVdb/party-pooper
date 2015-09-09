@@ -2,97 +2,173 @@
 	{
 		"id": "facebook",
 		"name": "Facebook",
-		"matchUrls": ["^(https|http|):\/\/(.+)\\.facebook\\.(com|net)", "^(https|http|)(:\/\/|)(www.|)fbstatic-a.akamaihd.net", "^(https|http|)(:\/\/|)(www.|)fbexternal-a.akamaihd.net"],
+		"matchUrls": [
+			"http://connect.facebook.net/*",
+			"https://www.facebook.com/*",
+			"http://static.ak.facebook.com/*",
+			"https://s-static.ak.facebook.com/*",
+			"https://static.ak.facebook.com/*",
+			"http://s-static.ak.facebook.com/*",
+			"https://fbexternal-a.akamaihd.net/*",
+			"https://fbstatic-a.akamaihd.net/*"
+		],
 		"category": "Social"
 	},
 	{
 		"id": "chartbeat",
 		"name": "Chartbeat",
-		"matchUrls": ["^(https|http|):\/\/(.+)\\.chartbeat.(com|net)"],
+		"matchUrls": [
+			"http://*.chartbeat.*/*"
+		],
 		"category": "Analytics"
 	},
 	{
 		"id": "twitter",
 		"name": "Twitter",
-		"matchUrls": ["^(https|http|):\/\/[\\w]+\\.twitter.com", "^(https|http|):\/\/+t.co"],
+		"matchUrls": [
+			"http://*.twitter.com/*",
+			"https://*.twitter.com/*",
+			"http://t.co/*"
+		],
 		"category": "Social"
 	},
 	{
 		"id": "spotify",
 		"name": "Spotify",
-		"matchUrls": ["^(https|http|)(:\/\/|)(embed.)spotify.com", "^(https|http|)(:\/\/|)(www.|)spotify-playlist-widget.s3.amazonaws.com"],
+		"matchUrls": [
+			"https://embed.spotify.com/*",
+			"http://spotify-playlist-widget.s3.amazonaws.com/*"
+		],
 		"category": "Widget"
 	},
 	{
 		"id": "crazyegg",
 		"name": "Crazyegg",
-		"matchUrls": ["^(https|http|):\/\/[\\w]+\\.crazyegg.com"],
+		"matchUrls": [
+			"http://script.crazyegg.com/*"
+		],
 		"category": "Analytics"
 	},
 	{
 		"id": "cim",
 		"name": "CIM",
-		"matchUrls": ["^(http|https):\/\/(.+)\\.gemius\\.pl"],
+		"matchUrls": [
+			"http://*.hit.gemius.pl/*"
+		],
 		"category": "Analytics"
 	},
 	{
 		"id": "google-dfp",
 		"name": "Google DFP",
-		"matchUrls": ["^(https|http|):\/\/.+\\.doubleclick.net", "^(http|https):\/\/[\\w]+\\.googlesyndication\\.com", "^(http|https):\/\/[\\w]+\\.googleadservices\\.com", "^https:\/\/www.google.(\\w+)\/ads\/user-lists"],
+		"matchUrls": [
+			"http://*.g.doubleclick.net/*",
+			"https://*.g.doubleclick.net/*",
+			"https://ad.doubleclick.net/*",
+			"http://ad.doubleclick.net/*",
+			"http://*.googlesyndication.com/*",
+			"http://www.googleadservices.com/*",
+			"http://partner.googleadservices.com/*",
+			"http://www.google.*/ads/user-lists/*"
+		],
 		"category": "Advertising"
 	},
 	{
 		"id": "google-gtm",
 		"name": "Google Tagmanager",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)googletagservices.com", "^(https|http|)(:\/\/|)(www.|)googletagmanager.com"],
+		"matchUrls": [
+			"http://www.googletagservices.com/*",
+			"http://www.googletagmanager.com/*"
+		],
 		"category": "Tagmanager"
 	},
 	{
 		"id": "google-ua",
 		"name": "Google Universal Analytics",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)google-analytics.com"],
+		"matchUrls": [
+			"http://www.google-analytics.com/*"
+		],
 		"category": "Analytics"
 	},
 	{
 		"id": "lynx",
 		"name": "Lynx",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)lynx.be"],
+		"matchUrls": [
+			"https://www.lynx.be/*"
+		],
 		"category": "Advertising"
 	},
 	{
 		"id": "dpp-uts",
 		"name": "De Persgroep UTS",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)utsdpp.persgroep.net"],
+		"matchUrls": [
+			"http://utsdpp.persgroep.net/*"
+		],
 		"category": "Analytics"
 	},
 	{
 		"id": "dpp-sso",
 		"name": "De Persgroep SSO",
-		"matchUrls": ["^https:\/\/caps.demorgen.be"],
+		"matchUrls": [
+			"https://caps.demorgen.be/*",
+			"https://caps.hln.be/*"
+		],
 		"category": "SSO"
 	},
 	{
 		"id": "dpp-adv",
 		"name": "De Persgroep Advertising",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)persgroepadvertising.be"],
+		"matchUrls": [
+			"^(https|http|)(:\/\/|)(www.|)persgroepadvertising.be"
+		],
 		"category": "Advertising"
+	},
+	{
+		"id": "dpp-stats",
+		"name": "De Persgroep Statistics",
+		"matchUrls": [
+			"http://stats.persgroep.be/*"
+		],
+		"category": "Analytics"
+	},
+	{
+		"id": "regiojobs",
+		"name": "Regiojobs",
+		"matchUrls": [
+			"http://static.regiojobs.be/*"
+		],
+		"category": "Publisher"
+	},
+	{
+		"id": "autotrack",
+		"name": "Autotrack",
+		"matchUrls": [
+			"http://assets.autotrack.be/*"
+		],
+		"category": "Publisher"
 	},
 	{
 		"id": "immoweb",
 		"name": "Immoweb",
-		"matchUrls": ["^(https|http|)(:\/\/|)(www.|)static.immoweb.be", "^(https|http|)(:\/\/|)(www.|)pictures.immoweb.be"],
+		"matchUrls": [
+			"^(https|http|)(:\/\/|)(www.|)static.immoweb.be",
+			"^(https|http|)(:\/\/|)(www.|)pictures.immoweb.be"
+		],
 		"category": "Advertising"
 	},
 	{
 		"id": "adhese",
 		"name": "Adhese",
-		"matchUrls": ["adhese.com"],
+		"matchUrls": [
+			"http://*.adhese.com/*"
+		],
 		"category": "Advertising"
 	},
 	{
 		"id": "krux",
 		"name": "Krux",
-		"matchUrls": ["krxd.net"],
+		"matchUrls": [
+			"krxd.net"
+		],
 		"category": "Analytics"
 	}
 
