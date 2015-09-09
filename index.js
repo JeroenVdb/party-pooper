@@ -11,15 +11,12 @@ module.exports = {
 				'id': '',
 				'name': '',
 				'matchUrls': [],
-				'category': 'Unknown',
-				'entries': [],
-				'totals': {}
+				'category': 'Unknown'
 			},
 			urlObject;
 
 		thirdPartyProviders.forEach(function(provider) {
 			if (hasMatchingUrl(provider.matchUrls, entryUrl)) {
-				console.log('We did find a match! Good!');
 				returnProvider = provider;
 				hasMatch = true;
 			}
